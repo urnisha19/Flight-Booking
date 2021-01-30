@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background:url("images/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.container{
+    width: 1200px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    padding: 20px 0;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 6px;   
+}
+nav ul li a{
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-left: 30px;  
+}
+nav ul li a:hover, a.active{
+    background-color: royalblue;
+    color:white;
+    border-radius: 5px;  
+    text-decoration: none;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 70px;
+    align-items: center;
+}
+.booking-form{
+    background-color:white;
+    color: navy;
+    border: 1px solid navy;
+    padding: 25px;
+    border-radius: 5px;
+    float: left;
+}
+.booking-form h3, .input-group, .calculations{
+    margin: 10px 0px;
+}
+.ticket-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plus-minus-btn{
+    padding-right: 2em;
+    margin-top: 2em;
+    word-spacing: .5em;
+   
+}
+.calculations p{
+    font-weight: 600;
+    margin: 12px 0 3px 0;
+}
+.booking-form input{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #F3F5FF;
+}
+.booking-form .inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.booking-content{
+    color: white;
+    width: 80%;
+}
+.booking-content h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.btn-style{
+    color: white;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:  #3352F2;
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+}
+.icon, .confirmation h2{
+    color: limegreen;
+}
+.confirmation{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #FFFF00;
+    padding: 10px;
+    background-color: rgba(206, 211, 224, 0.9);
+  
+}
+  
+ 
